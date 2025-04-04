@@ -1,0 +1,30 @@
+<button data-theme-toggle-button class="cursor-pointer text-xl">
+  🌙
+</button>
+
+<script>
+  type Theme = 'light' | 'dark'
+
+  const button = document.querySelector('[data-theme-toggle-button]') as HTMLElement
+  let currentTheme: Theme = (localStorage.getItem('theme') as Theme) || 'light'
+
+  const updateButtonContent = (theme: Theme) => {
+    if (button) {
+      button.innerText = theme === 'light' ? '🌙' : '☀️'
+    }
+  }
+
+  document.documentElement.setAttribute('data-theme', currentTheme)
+  document.documentElement.classList.toggle('dark', currentTheme === 'dark')
+  updateButtonContent(currentTheme)
+
+  button?.addEventListener('click', () => {
+    currentTheme = currentTheme === 'dark' ? 'light' : 'dark'
+
+    document.documentElement.setAttribute('data-theme', currentTheme)
+    document.documentElement.classList.toggle('dark', currentTheme === 'dark')
+    localStorage.setItem('theme', currentTheme)
+
+    updateButtonContent(currentTheme)
+  })
+</script>
