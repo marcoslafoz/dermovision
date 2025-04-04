@@ -1,11 +1,13 @@
 @import "tailwindcss";
 @import './fonts.css';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-primary: "Inter-Variable";
 
   --color-theme-primary: '#000';
-  --color-theme-secondary: '#fff';
+  --color-theme-secondary: '#fdf7e9';
 
   --font-weight-semibold: 500;
   --font-weight-bold: 600;
