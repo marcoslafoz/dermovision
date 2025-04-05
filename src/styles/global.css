@@ -5,10 +5,12 @@
 
 @theme {
   --font-montserrat: "Montserrat-Variable";
+  --font-baskerville: "baskerville-old-face";
 
   --color-theme-primary: '#000';
   --color-theme-secondary: '#fdf2e9';
 
   --font-weight-semibold: 500;
   --font-weight-bold: 600;
+
 }

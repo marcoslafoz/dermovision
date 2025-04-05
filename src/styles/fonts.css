@@ -6,3 +6,11 @@
   font-display: swap;
   src: url("/fonts/Montserrat-Variable.woff2") format("woff2");
 }
+
+/* Baskerville Old Face */
+@font-face {
+  font-family: 'baskerville-old-face';
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/baskerville-old-face.woff2") format("woff2");
+}
