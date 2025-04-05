@@ -4,16 +4,19 @@ import type { Treatment } from '@/types/treatment.d.ts'
 
 const treatmentData: Treatment[] = [
   {
-    title: 'LOREM IPSUM DOLOR 1',
-    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit class tristique at.',
+    title: 'Manicura',
+    content:
+      'Resalta la belleza de tus manos con una manicura profesional. Uñas perfectas, hidratación profunda y acabado impecable para que deslumbres en cualquier ocasión.',
   },
   {
-    title: 'LOREM IPSUM DOLOR 2',
-    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit class tristique at.',
+    title: 'Tratamientos',
+    content:
+      'Renueva tu piel y relájate con nuestros tratamientos personalizados. Faciales revitalizantes, masajes relajantes y cuidados intensivos diseñados para que te sientas y te veas espectacular.',
   },
   {
-    title: 'LOREM IPSUM DOLOR 3',
-    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit class tristique at.',
+    title: 'Depilación',
+    content:
+      'Olvídate del vello para siempre con nuestros tratamientos de fotodepilación con tecnología láser e IPL. Eficaces, seguros y adaptados a tu tipo de piel para una piel suave, radiante y libre de vello durante todo el año.',
   },
 ]
 ---
@@ -21,7 +24,7 @@ const treatmentData: Treatment[] = [
 <section id="treatments" class="flex h-auto w-full flex-col items-center justify-center">
   <span class="my-16 flex flex-row items-center justify-center gap-2">
     <h1 class="font-baskerville text-3xl uppercase">Tratamientos</h1>
-    <img src="/images/sparks.svg" alt="Sparks" class="dark:invert"/>
+    <img src="/images/sparks.svg" alt="Sparks" class="dark:invert" />
   </span>
 
   <div class="border-theme-primary dark:border-theme-secondary grid w-full grid-cols-1 border-y md:grid-cols-3">
