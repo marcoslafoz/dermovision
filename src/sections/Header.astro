@@ -1,5 +1,15 @@
----
-import ThemeToggle from "@/components/ThemeToggle.astro"
----
-
-<div>HEADER <ThemeToggle/></div>
+<div class="flex w-full flex-col justify-center pt-16">
+  <header class="flex flex-row items-center justify-center">
+    <hr class="mx-14 w-full max-w-96 border-t-1 border-black" />
+    <img src="/images/dv_logo.webp" alt="DV Logo" class="aspect-auto w-24 contain-content" />
+    <hr class="mx-14 w-full max-w-96 border-t-1 border-black" />
+  </header>
+  <nav class="flex flex-row items-center justify-center">
+    <ul class="font-montserrat flex flex-row flex-wrap items-center justify-center gap-x-10 gap-y-3 p-6 text-sm font-light uppercase">
+      <li><a href="#about-us" class="hover:opacity-60">Sobre Nosotros</a></li>
+      <li><a href="#projects" class="hover:opacity-60">Tratamientos</a></li>
+      <li><a href="#clinic" class="hover:opacity-60">Clínicas</a></li>
+      <li><a href="#contact" class="hover:opacity-60">Clínicas</a></li>
+    </ul>
+  </nav>
+</div>
