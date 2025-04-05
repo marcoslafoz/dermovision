@@ -1,0 +1,4 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+https://github.com/midudev/dermovision/tree/main/src/pages
