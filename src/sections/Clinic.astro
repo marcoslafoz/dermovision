@@ -1,1 +1,59 @@
-<div>CLINIC</div>
+<section id="clinic" class="flex h-auto w-full flex-col items-center justify-center overflow-hidden">
+  <span class="my-16 flex flex-row items-center justify-center gap-3">
+    <h1 class="font-baskerville text-3xl uppercase">Clínicas</h1>
+    <img src="/images/dv.webp" alt="DV Logo" class="aspect-auto h-4.5 contain-content" />
+  </span>
+
+  <article
+    class="border-theme-primary dark:border-theme-secondary flex h-auto w-full flex-row flex-wrap-reverse items-center justify-center gap-x-30 border-y-1"
+  >
+    <div class="article-container items-left flex max-w-70 flex-col justify-center gap-5 py-8">
+      <h2 class="font-baskerville text-5xl uppercase">Zaragoza</h2>
+      <p class="font-light">Clínica Dermovision<br /> Calle del Mirador, 18, Local 3<br />50006 Zaragoza, España</p>
+      <p class="font-light">Lunes – Viernes<br />9:30 – 13:30, 16:30 – 20:00</p>
+      <div class="justify-cente flex flex-row flex-nowrap items-center gap-4 dark:invert">
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img src="/images/instagram.svg" alt="Instagram" class="aspect-auto h-10 cursor-pointer contain-content hover:opacity-50" /></a
+        >
+        <a href="https://www.google.es/maps/" target="_blank"
+          ><img src="/images/google-maps.svg" alt="Google Maps" class="aspect-auto h-8 cursor-pointer contain-content hover:opacity-50" /></a
+        >
+        <a href="https://www.tripadvisor.es/" target="_blank"
+          ><img src="/images/tripadvisor.svg" alt="Tripadvisor" class="aspect-auto h-6 cursor-pointer contain-content hover:opacity-50" /></a
+        >
+      </div>
+    </div>
+    <img src="/images/zaragoza-clinic.webp" alt="Clínica Dermovision Zaragoza" class="image-container aspect-auto w-120 contain-content" />
+  </article>
+
+  <span class="my-16 flex flex-row items-center justify-center gap-3"></span>
+</section>
+
+<style>
+  .image-container {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-top: 0;
+  }
+  .article-container {
+    border: 0;
+  }
+
+  @media (max-width: 865px) {
+    .image-container {
+      border: 0;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+    }
+
+    .article-container {
+      border: 0;
+      border-left: 1px solid;
+      border-right: 1px solid;
+      min-width: 30rem;
+      padding-left: 4rem;
+    }
+  }
+</style>
