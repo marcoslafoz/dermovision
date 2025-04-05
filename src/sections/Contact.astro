@@ -1,1 +1,46 @@
-<div>CONTACT</div>
+<section id="contact" class="flex flex-col items-center justify-center py-16">
+  <h1 class="font-baskerville text-3xl uppercase">Contacto</h1>
+  <div class="flex flex-row flex-wrap items-center justify-center gap-x-20 pt-20 pb-10">
+    <div class="info-container max-w-80 text-right font-light">
+      Si tienes preguntas o necesitas información general, por favor no dudes en contactar con nosotros para solicitar la información que necesitas.
+      Será un honor ayudarte.
+    </div>
+    <hr class="border-theme-secondary dark:border-theme-primary h-40 border-l-1 opacity-30" />
+    <div class="data-container flex flex-row flex-wrap gap-15 font-light justify-center">
+      <div class="items-left flex flex-col flex-nowrap gap-4">
+        <h2 class="font-baskerville text-xl uppercase">Datos de contacto</h2>
+        <p>Teléfono<br />+34 600 000 000</p>
+        <p>Email<br />contacto@dermovision.com</p>
+        <p>Preguntas frecuentes<br />Más información</p>
+      </div>
+      <div class="items-left flex flex-col flex-nowrap gap-4">
+        <h2 class="font-baskerville text-xl uppercase">Redes Sociales</h2>
+        <ul>
+          <li><a href="https://www.instagram.com/" target="_blank" class="hover:opacity-60">Instagram</a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" class="hover:opacity-60">Facebook</a></li>
+          <li><a href="https://x.com/" target="_blank" class="hover:opacity-60">X - Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 928px) {
+    hr {
+      display: none;
+    }
+
+    .info-container {
+      text-align: center;
+      padding-bottom: 5rem;
+    }
+  }
+
+  @media (max-width: 447px) {
+    .data-container {
+      align-items: center;
+      text-align: center;
+    }
+  }
+</style>
