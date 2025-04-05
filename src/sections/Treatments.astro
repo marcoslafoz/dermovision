@@ -1,1 +1,60 @@
-<div>TREATMENTS</div>
+---
+import TreatmentArticle from '@/components/TreatmentArticle.astro'
+import type { Treatment } from '@/types/treatment.d.ts'
+
+const treatmentData: Treatment[] = [
+  {
+    title: 'LOREM IPSUM DOLOR 1',
+    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit class tristique at.',
+  },
+  {
+    title: 'LOREM IPSUM DOLOR 2',
+    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit class tristique at.',
+  },
+  {
+    title: 'LOREM IPSUM DOLOR 3',
+    content: 'Lorem ipsum dolor sit amet consectetur adipiscing elit class tristique at.',
+  },
+]
+---
+
+<section id="treatments" class="flex h-auto w-full flex-col items-center justify-center">
+  <span class="my-16 flex flex-row items-center justify-center gap-2">
+    <h1 class="font-baskerville text-3xl uppercase">Tratamientos</h1>
+    <img src="/images/sparks.svg" alt="Sparks" />
+  </span>
+
+  <div class="grid w-full grid-cols-1 border border-black md:grid-cols-3">
+    <!-- Item 1 -->
+    <div
+      class="order-1 h-100 border-b border-black bg-cover bg-center md:order-1 md:border-r"
+      style="background-image: url('/images/treatment1.webp');"
+    >
+    </div>
+
+    <!-- Item 2 -->
+    <div class="order-4 flex items-center justify-center border-r border-b border-black p-6 text-center md:order-2">
+      <TreatmentArticle treatment={treatmentData[1]} />
+    </div>
+
+    <!-- Item 3 -->
+    <div class="order-5 h-100 border-b border-black bg-cover bg-center md:order-3" style="background-image: url('/images/treatment3.webp');"></div>
+
+    <!-- Item 4 -->
+    <div class="order-2 flex items-center justify-center border-r border-b border-black p-6 text-center md:order-4 md:border-r md:border-b-0">
+      <TreatmentArticle treatment={treatmentData[0]} />
+    </div>
+
+    <!-- Item 5 -->
+    <div
+      class="order-3 h-100 border-r border-b border-black bg-cover bg-center md:order-5 md:border-b-0"
+      style="background-image: url('/images/treatment2.webp');"
+    >
+    </div>
+
+    <!-- Item 6 -->
+    <div class="order-6 flex items-center justify-center border-black p-6 text-center md:order-6">
+      <TreatmentArticle treatment={treatmentData[2]} />
+    </div>
+  </div>
+</section>
