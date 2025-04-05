@@ -1,48 +1,66 @@
-# Astro Starter Kit: Basics
+# Dermovision ✨
 
-```sh
-npm create astro@latest -- --template basics
+**Dermovision** es una landing page de una clínica estética 🌿, creada con Astro. Este proyecto tiene como objetivo ofrecer una interfaz moderna y funcional para los usuarios interesados en los servicios de la clínica.
+
+## Estructura del Proyecto 🗂️
+
+```
+/public
+  |── favicon/
+  |── images/
+  └── fonts/
+/src
+  ├── components/
+  ├── sections/
+  |── pages/
+  |── layout/
+  |── types/
+  |── assets/
+  └── styles/
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Requisitos 🖥️
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Necesitas tener **Node.js** instalado.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Instalación ⚙️
 
-## 🚀 Project Structure
+1. Clona este repositorio:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+git clone https://github.com/marcoslafoz/dermovision.git
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+2. Instala las dependencias:
 
-## 🧞 Commands
+```bash
+npm install
+```
 
-All commands are run from the root of the project, from a terminal:
+## Comandos 🚀
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Para iniciar el servidor de desarrollo:
 
-## 👀 Want to learn more?
+```bash
+npm run dev
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Para construir el proyecto para producción:
+
+```bash
+npm run build
+```
+
+Para ver la vista previa de la construcción:
+
+```bash
+npm run preview
+```
+
+## Enlaces 🌐
+
+- [Demo del proyecto](https://dermovision.lafoz.dev)
+
+## Contribuciones 🤝
+
+¡Las contribuciones son bienvenidas! Si tienes sugerencias o mejoras, no dudes en abrir un *issue* o enviar un *pull request*.
